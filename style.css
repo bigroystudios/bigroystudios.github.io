@@ -1,0 +1,75 @@
+body, html {
+	margin: 0;
+	background-color: #21d3c4;
+	color: white;
+	font-family: 'Mukta', sans-serif;;
+}
+
+.content {
+	width: 50%;
+	margin-top: 10vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3vw;
+	max-width: 252px;
+	width: 100%;
+	height: auto;
+}
+
+.game {
+	width: 7vw;
+	height: 7vw;
+	background-color: white;
+	display: inline-block;
+	margin: 0 0.5vw;
+	background-size: cover;
+	background-position-x: 50%;
+	transition: 300ms ease;
+	opacity: 0.9;
+}
+
+.game:hover {
+	transform: scale(1.1) translateY(-8px);
+	opacity: 1;
+}
+
+.footer {
+	font-size: 1vw;
+	margin-top: 2vw;
+}
+
+.footer a {
+	color: white !important;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .game {
+    	width: 20vw;
+    	height: 20vw;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 20px;
+    }
+
+    .logo {
+    	width: 40vw;
+    	height: auto;
+    }
+
+    .footer {
+    	font-size: 3vw;
+    }
+}
