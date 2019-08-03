@@ -1,53 +1,61 @@
-<!--
-░░░░░░░░░▄▄▄▄▄
-░░░░░░░░▀▀▀██████▄▄▄
-░░░░░░▄▄▄▄▄░░█████████▄ 
-░░░░░▀▀▀▀█████▌░▀▐▄░▀▐█ 
-░░░▀▀█████▄▄░▀██████▄██ 
-░░░▀▄▄▄▄▄░░▀▀█▄▀█════█▀
-░░░░░░░░▀▀▀▄░░▀▀███░▀░░░░░░▄▄
-░░░░░▄███▀▀██▄████████▄░▄▀▀▀██▌
-░░░██▀▄▄▄██▀▄███▀░▀▀████░░░░░▀█▄
-▄▀▀▀▄██▄▀▀▌████▒▒▒▒▒▒███░░░░▌▄▄▀
-▌░░░░▐▀████▐███▒▒▒▒▒▐██▌
-▀▄░░▄▀░░░▀▀████▒▒▒▒▄██▀
-░░▀▀░░░░░░▀▀█████████▀
-░░░░░░░░▄▄██▀██████▀█
-░░░░░░▄██▀░░░░░▀▀▀░░█
-░░░░░▄█░░░░░░░░░░░░░▐▌
-░▄▄▄▄█▌░░░░░░░░░░░░░░▀█▄▄▄▄▀▀▄
-▌░░░░░▐░░░░░░░░░░░░░░░░▀▀▄▄▄▀
-Oh, it's my friendly neighborhood girk
-her nam e kaiya
--->
 <!doctype html>
 <html>
-	<head>
-		<title>Big Roy Studios - Official Website</title>
-		<meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
-		<link rel="shortcut icon" type="image/png" href="favicon.png">
-	</head>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
 
-	<body>
-		<nav>
-			<ul>
-				<a href="index.html"><li class="one">Home</li></a>
-				<a href="games.html"><li class="two">Games</li></a>
-				<a href="contact.html"><li class="three">Contact</li></a>
-			</ul>
-			<span class="copyright"><a href="https://scratch.mit.edu/projects/198163430/">&copy;</a>2018 Big Roy Studios</span>
-		</nav>
+    <title>Big Roy Studios</title>
+  </head>
 
-		<main>
-			<a href="https://bigroy.itch.io/shmavity" target="_blank"><img class="featured" src="smavityscreen.jpg"></a>
-			<div class="description">
-				<a href="https://bigroy.itch.io/shmavity" target="_blank"><h2>Shmavity</h2></a>
-				<p class="info">A platformer without gravity. Created for the GMTK2018 Game Jam.</p>
-				<p class="date">Published 09/02/18</p>
-			</div>
-		</main>
-	</body>
+  <body>
+    <div class="slide active home">
+      <div class="left">
+        <img class="logo" src="img/really_good_logo.png" alt="its just a really bad logo youre not missing much">
+      </div>
+
+      <div class="right">
+        <div class="stuff">
+          <div class="thing"><span id="games">our games</span></div>
+          <div class="thing"><span id="about">about us</span></div>
+          <div class="thing"><span id="contact">contact</span></div>
+          <div class="thing"><span id="diamonds" class="teehee">free diamonds!!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide games">
+      <div class="wrapper">
+        <div class="back"><-- go back</div>
+        <div class="center">
+          <h1>our games</h1>
+          <div class="list"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide about">
+      <div class="wrapper">
+        <div class="back"><-- go back</div>
+        <div class="center">
+          <h1>about us</h1>
+          <img src="img/make_game.png" alt="make game">
+        </div>
+      </div>
+    </div>
+
+    <div class="slide contact">
+      <div class="wrapper">
+        <div class="back"><-- go back</div>
+        <div class="center">
+          <h1>contact</h1>
+          <p>we don't feel like being talked to right now, so have this diamond to fill that "talking to big roy" shaped hole in your heart</p>
+          <div class="clickme"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

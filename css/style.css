@@ -1,0 +1,201 @@
+body, html {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #00a3e8;
+  font-family: "Comic Sans MS", "Comic Sans";
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 100vw;
+  transition: 1s ease;
+  overflow-y: auto;
+  opacity: 0;
+}
+
+.slide.home {
+  left: -100vw;
+}
+
+.left, .right {
+  height: 50vh;
+  width: 50vw;
+  box-sizing: border-box;
+  top: 25vh;
+  position: absolute;
+}
+
+.left {
+  left: 0;
+  padding-right: 1vw;
+}
+
+.right {
+  right: 0;
+  padding-left: 1vw;
+}
+
+.logo {
+  width: auto;
+  height: 50%;
+  display: block;
+  float: right;
+  margin-top: calc(50% / 4);
+}
+
+.stuff {
+  height: 50%;
+  display: block;
+  margin-top: calc(50% / 4);
+}
+
+.thing {
+  height: 25%;
+  transform: rotate(0);
+}
+
+.thing span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 2000ms linear;
+}
+
+.thing span.teehee {
+  transition: 600ms;
+}
+
+.thing span#games:hover, .thing span#about:hover, .thing span#contact:hover {
+  transform: scale(3);
+}
+
+.thing span.teehee:hover {
+  color: red;
+  transform: scale(4);
+}
+
+.active {
+  left: 0 !important;
+  opacity: 1;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.center iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: lightblue;
+}
+
+.clickme {
+  width: 140px;
+  height: 130px;
+  background-image: url(../img/diamond.png);
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.jk {
+  background-image: url(../img/jk.png) !important;
+  animation: lol 1s infinite;
+  cursor: default;
+}
+
+.nerd {
+  background-image: url(../img/nerd.png) !important;
+}
+
+@keyframes lol{
+  0%{transform: scale(1)}
+	25%{transform: scale(1.1)}
+  50%{transform: scale(1)}
+  75%{transform: scale(1.1)}
+}
+
+
+
+
+
+
+/* RAINBOWWWWW */
+
+.rainbow, .rainbow a {
+
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 2s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 2s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 2s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
